@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f /usr/sbin/exim4 ]
+  then
+      echo '<<<exim4>>>'
+      /usr/sbin/exim4 -bp | /usr/sbin/exiqsumm
+fi
+
